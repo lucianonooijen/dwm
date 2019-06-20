@@ -45,12 +45,18 @@ static const int nmaster     = 1;    /* number of clients in master area */
 static const int resizehints = 1;    /* 1 means respect size hints in tiled resizals */
 
 #include "layouts.c"
+#include "fibonacci.c"
+
 static const Layout layouts[] = {
 	/* symbol     arrange function */
 	{ "🧱",      tile },    /* first entry is default */
 	{ "☁",      NULL },    /* no layout function means floating behavior */
 	{ "🔎",      monocle },
 	{ "🌐",      grid },
+	{ "|M|",      centeredmaster },
+	{ ">M>",      centeredfloatingmaster },
+ 	{ "[@]",      spiral },
+ 	{ "[\\]",      dwindle },
 	{ NULL,       NULL },
 };
 
