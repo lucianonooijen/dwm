@@ -113,7 +113,7 @@ static Key keys[] = {
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	/* { MODKEY,                       XK_Return, zoom,           {0} }, */
 	{ MODKEY,                       XK_Tab,    view,           {0} },
-	{ MODKEY,			XK_q,      killclient,     {0} },
+	{ MODKEY,			            XK_q,      killclient,     {0} },
 	{ MODKEY,                       XK_t,      setlayout,      {.v = &layouts[0]} },
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[1]} },
 	{ MODKEY,                       XK_m,      setlayout,      {.v = &layouts[2]} },
@@ -122,10 +122,10 @@ static Key keys[] = {
 	{ MODKEY,                       XK_f,      setlayout,      {.v = &layouts[5]} },
 	{ MODKEY,                       XK_s,      setlayout,      {.v = &layouts[6]} },
 	{ MODKEY|ShiftMask,             XK_s,      setlayout,      {.v = &layouts[7]} },
-	{ MODKEY|ControlMask,		XK_comma,  cyclelayout,    {.i = -1 } },
+	{ MODKEY|ControlMask,		    XK_comma,  cyclelayout,    {.i = -1 } },
 	{ MODKEY|ControlMask,           XK_period, cyclelayout,    {.i = +1 } },
-	{ MODKEY,			XK_space,  zoom,      {0} },
-	{ MODKEY|ShiftMask,           XK_space, cyclelayout,    {.i = +1 } },
+	{ MODKEY,			            XK_space,  zoom,      {0} },
+	{ MODKEY|ShiftMask,             XK_space, cyclelayout,    {.i = +1 } },
 	/* { MODKEY,                       XK_space,  setlayout,      {0} }, */
 	/* { MODKEY|ShiftMask,             XK_space,  togglefloating, {0} }, */
 	{ MODKEY,                       XK_0,      view,           {.ui = ~0 } },
